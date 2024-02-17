@@ -1,0 +1,144 @@
+/*Roger Ramos 8823799*/
+
+html{
+    /* font shorthand 6 propteries  
+        font-style - normal, italic, oblique
+        font-variant - normal, small-caps
+        font-weight normal - bold,  100 - 900
+        font-size/line-height
+        font-family
+
+        ;Times, "Times New Roman", Georgia, serif
+        "Lucida Console", Courier, monospace;
+
+    font : italic small-caps bold px/1.5 Verdana, Arial, Helvetica, sans-serif ;
+    font-variant : normal;
+    font-style : normal;
+    font-family : monospace;
+
+
+ color : rgb(24, 6, 222);
+}
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 174, 174);
+    width : 100%;
+    max-width : 1200px;
+    margin : auto;
+    padding : 0.30rem;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(114, 101, 101);
+    color: rgb(19, 17, 17);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(113, 97, 81);
+    font-size: 20px;
+    box-sizing: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+}
+img, video{
+    text-align: center;
+    width : 40%;
+    height : 50%;
+    border : .5rem solid rgb(194, 98, 146);
+    box-shadow: 10px 10px 8px black;
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px rgb(75, 109, 121);
+    box-shadow: 10px 10px 5px rgb(59, 78, 84);
+    box-shadow: 10px 10px 5px 12px rgb(52, 66, 70); 
+
+ul {
+    list-style-type: none;
+}
+
+ border-image-width: auto;
+    list-style-position: outside; 
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#quote{
+    
+    border : .5rem solid rgb(135, 66, 100);
+    box-shadow: 10px 10px 8px black;
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px rgb(45, 62, 68);
+    box-shadow: 10px 10px 5px rgb(59, 78, 84);
+    box-shadow: 10px 10px 5px 12px rgb(58, 68, 71); 
+    
+}
+#relative-path-image{
+    background-color: rgb(56, 102, 142);
+    border : .25rem solid green;
+    color :green;
+}
+#absolute-path-image{
+    background-color: aqua;
+    border : .25rem solid blue; 
+    color : blue;
+}
+.main-section-figure img{
+    width : 60%;
+    height : 80%;
+    padding : .5rem;
+    border-radius : 3rem; 
+
+}
+#quote{
+        
+        border : .5rem solid #b58;
+        box-shadow: 10px 10px 8px black;
+        box-shadow: 10px 10px;
+        box-shadow: 10px 10px lightblue;
+        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 10px 10px 5px 12px lightblue;
+        
+    }
+h3 {
+        text-align: center;
+        color: rgb(113, 97, 81);
+        font-size: 20px;
+        box-sizing: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
