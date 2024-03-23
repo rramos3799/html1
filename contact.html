@@ -1,0 +1,111 @@
+<!--Roger Ramos 8823799 -->
+<!--Section 3 example 1-->
+<!--this is the document type declaration-->
+<!DOCTYPE html>
+<!--This is the html element with the lang attribute specifies the language of the element's content is english-->
+<html lang="en">
+    <!--this is the head element-->
+<head>
+    <!--this is metadata defining character set-->
+    <meta charset="UTF-8">
+    <!--this metadata setting the viewport to make a website look good on all devices-->
+    <!-- imporatnat for responsive design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this metadata defining keywords for search engines-->
+    <!-- imporatnat for SEO-->
+    <meta name="keywords" content="html,css,web,development,elements,attributes">
+    <!--this metadata Defining a description of the web page-->
+    <!-- imporatnat for SEO-->
+    <meta name="description" content="This website is about the basics of HTML and CSS.">
+   
+   <!--This is embedded css applied before the external css-->
+   <style>
+        /*h1 element selector*/
+        h1{
+            color : darkblue; /* Set text color to dark blue */
+        }
+    </style>
+   
+    <!--link css files. CSS will be applied from top to bottom-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+     <!--This is embedded css applied after the external css-->
+     <style>
+        /*h1 element selector*/
+        h1{
+            color : rgb(247, 8, 48); /* Set text color to pink */
+        }
+   </style>
+ 
+    <!--Define a title for your HTML document and a title in the browser toolbar-->
+    <!-- imporatnat for SEO + Accessibility-->
+    <title>Japan's Legendary Swordsman</title>    
+</head>
+<body >
+    <!--this is the semantic header element that defines the body's header-->   
+    <header>
+        <!--this the most importmant heading element-->
+        <!--this element has a class attribute-->
+        <!--this element has an id  attribute-->
+        <!--this is inline css for the h1 element-->
+        <!--this is inline css for the h1 element-->
+        <h1 id="header-heading" class="headings" style="color:red;">
+            <!--This is a span element for inline grouping-->
+            <span id="span-h">Japan's</span> Legendary Swordsman (h1) 
+
+        </h1>
+        
+    </header>
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+     <!--this is the semantic main element that defines the body's main--> 
+    <main>
+        <h2>Contact</h2>
+     <dd> Roger Ramos</dd>
+     <dd>Email: rramos3799@conestogac.on.ca</dd>
+     
+    </main> 
+    <aside>
+        <h3>Links to external sites
+
+        </h3>
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        </ul>
+        <h3>Link to internal source on page</h3>
+        <a href="#section1">Examples of HTML Elements (h2)</a>
+        <h3>Link to email address</h3>
+        <a href="mailto:rramos3799@conestogac.on.ca">Email</a>
+        <h3>Link with telephone number </h3>
+        <a href="tel:548-333-9848">Call</a>
+        <h3>Link to pdf file</h3>
+        <a href="pdf/Assignment 2 HTML CSS .pdf" target="_blank">Assignment 2</a>
+        <h3>Link wrapped around image</h3>
+        <a href="https://www.youtube.com/results?search_query=musashi+miyamoto" title="Link to Youtube" target="_blank"><img src="images/Samurai X.jpg" width="100" height="100"></a>
+
+
+    </aside>
+
+
+
+
+    <!--this is the semantic footer element that defines the body's footer-->
+   
+    <footer>
+        <p>&#169; Roger Ramos</p>
+
+    </footer>
+
+
+   
+
+
+    
+
+    
+</body>
+</html>

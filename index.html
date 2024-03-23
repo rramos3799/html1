@@ -1,43 +1,254 @@
+<!--Roger Ramos 8823799 -->
+<!--Section 3 Assignment HTML and CSS-->
+<!--this is the document type declaration-->
 <!DOCTYPE html>
+<!--This is the html element with the lang attribute specifies the language of the element's content is english-->
 <html lang="en">
+    <!--this is the head element-->
 <head>
+    <!--this is metadata defining character set-->
     <meta charset="UTF-8">
+    <!--this metadata setting the viewport to make a website look good on all devices-->
+    <!-- imporatnat for responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <!--this metadata defining keywords for search engines-->
+    <!-- imporatnat for SEO-->
+    <meta name="keywords" content="html,css,web,development,elements,attributes">
+    <!--this metadata Defining a description of the web page-->
+    <!-- imporatnat for SEO-->
+    <meta name="description" content="This website is about the basics of HTML and CSS.">
+   
+   <!--This is embedded css applied before the external css-->
+   <style>
+        /*h1 element selector*/
+        h1{
+            color : darkblue; /* Set text color to dark blue */
+        }
+    </style>
+   
+    <!--link css files. CSS will be applied from top to bottom-->
     <link rel="stylesheet" href="css/normalize.css">
-     <title>Japan's Legendary Swordsman</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <!--This is embedded css applied after the external css-->
+     <style>
+        /*h1 element selector*/
+        h1{
+            color : rgb(246, 5, 45); 
+        }
+   </style>
+ 
+    <!--Define a title for your HTML document and a title in the browser toolbar-->
+    <!-- imporatnat for SEO + Accessibility-->
+    <title>Japan's Legendary Swordsman</title>    
 </head>
-<body>
-    <img src="images/Miyamoto_Musashi-Portrait-Edo-period.jpg" alt="Miyamoto Musashi">
+<body >
+    <!--this is the semantic header element that defines the body's header-->   
     <header>
-        <h1>Japan's Legendary Swordsman</h1>
-            
-                <li><a href="#Biography">Biography</a></li>
-                <li><a href="#Legendary Duel">Legendary Duel</a></li>
-                
+        <!--this the most importmant heading element-->
+        <!--this element has a class attribute-->
+        <!--this element has an id  attribute-->
+        <!--this is inline css for the h1 element-->
+        <!--this is inline css for the h1 element-->
+        <h1 id="header-heading" class="headings" style="color:red;">
+            <!--This is a span element for inline grouping-->
+            <span id="span-h">Japan's</span> Legendary Swordsman
+
+        </h1>
+        
     </header>
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+     <!--this is the semantic main element that defines the body's main--> 
     <main>
-
-
-      <section id="Biography">
-            <h2>Biography</h2>
-            <p>  Miyamoto Musashi (宮本 武蔵, c. 1584 – 13 June 1645),[1] also known as Shinmen Takezō, Miyamoto Bennosuke or, by his Buddhist name, Niten Dōraku,[2] was a Japanese swordsman, philosopher, strategist, writer and rōnin, who became renowned through stories of his unique double-bladed swordsmanship and undefeated record in his 61 duels (next is 33 by Itō Ittōsai). Musashi, as he was often simply known, is considered a Kensei, a sword-saint of Japan.[3] He was the founder of the Niten Ichi-ryū, or Nito Ichi-ryū, style of swordsmanship, and in his final years authored The Book of Five Rings (五輪の書, Go Rin No Sho) and Dokkōdō (獨行道, The Path of Aloneness) The details of Miyamoto Musashi's early life are difficult to verify. Musashi himself simply states in The Book of Five Rings that he was born in Harima Province. Niten Ki (an early biography of Musashi) supports the assertion that Musashi was born in 1584: "[He] was born in Banshū, in Tenshō 12 [1584], the Year of the Monkey." The historian Kamiko Tadashi, commenting on Musashi's text, notes: "Munisai was Musashi's father ... he lived in Miyamoto village, in the Yoshino district [of Mimasaka Province]. Musashi was most probably born here."</p>
+        <section>
+            <!--ordered list-->
+            <ol>
+                <li>Duel</li>
+                <li>Philosophy</li>
+                <li>Teaching</li>
+            </ol>
+            <!--unordered list-->
+            <ul>
+                <li>Katana</li>
+                <li>Bow and Arrow</li>
+                <li>Spear</li>
+            </ul>
+            <!--description list-->
+            <dl>
+                <dt>Name</dt>
+                <dd>Roger Ramos</dd>
+                <dt>Gender</dt>
+                <dd>Male</dd>
+                <dt>Phone</dt>
+                <dd>5483339848</dd>
+            </dl>
         </section>
 
-        <section id="Legendary Duel">
-            <h2>Legendary Duel</h2>
-            <p>The duel was scheduled for April 13, 1612, when Musashi was approximately 30 years old. The departure by boat for the duel was arranged for the Hour of the Dragon in the early morning (approximately 8:00 AM) to the island of Ganryūjima, a small isle between Honshū and Kyūshū. While Hosokawa officials banned spectators, the island was filled with them anyway. Kojirō was known for wielding an oversized nodachi (Japanese greatsword) called a "laundry-drying pole" for its length, as well as being titled "three-shaku silver blade" (「三尺の白刃」). Using this sword, Kojirō was said to be known for a swift two-stroke sword technique called tsubame gaeshi (not to confuse with the judo move of the same name, which received the name as an homage), and he bore the nickname "The Demon of the Western Provinces". Kojirō arrived at the appointed time, but was then left to wait for hours; Musashi had overslept. Kojirō sent out servants to retrieve Musashi, who ate a full breakfast, taking his time. In some variants of the tale, Musashi intentionally arrives late as a sign of disrespect. As he sailed over the Kanmon Straits, Musashi carved a crude oversized bokken from one of the ship's oars with his knife, making an improvised wooden sword, possibly to help wake himself up. Upon his arrival, an irritated Kojirō chided Musashi's lateness and dramatically threw his scabbard into the sea, as a sign that he would not stop and would fight to the death. Musashi responded with a taunt of his own, saying that Kojirō clearly wasn't confident in himself if he thought he'd never get a chance to use a fine scabbard again.
-                Gorinto dedicated to Sasaki Kojiro in Musashi Temple (Ohara).
-                The two circled each other, and Kojirō leaped toward Musashi with his trademark overhead strike. Musashi, too, jumped and swung his weapon with a shout, and the two sword strokes met. Musashi's headband fell off, sliced by Kojirō's sword, but somehow, only the headband was cut rather than Musashi's skull. Musashi's strike, meanwhile, had struck true, cleaving Kojirō's skull.</p>
-                <img src="images/Miyamoto-Musashi-Fights-Sasaki-Kojiro-at-Ganryujima-Ukiyo-e.jpg" alt="Painting Difiction">
 
-<section>
-<h3>Video</Video></h3>
-<iframe width="935" height="526" src="https://www.youtube.com/embed/NGQQGeI1MmE" title="Miyamoto Musashi | The Path of the Loner" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</section>
-<footer>
+        <!--this is a section element nested in the main-->        
+        <section id="section1">
+           
+            <h1 class="headings,subheadings">Miyamoto Musashi</h1>
+            <!--this is a paragraph-->
+            <p class="blue-p" id="lorem"> Miyamoto Musashi <em>was a Japanese swordsman, philosopher, strategist, writer and rōnin,</em>    who became renowned through stories of his unique double-bladed swordsmanship and undefeated record in his 61 duels (next is 33 by Itō Ittōsai). Musashi is considered a Kensei, a sword-saint of Japan.[3] He was the founder of the Niten Ichi-ryū, or Nito Ichi-ryū, style of swordsmanship, and in his final years authored The Book of Five Rings (五輪の書, Go Rin No Sho) and Dokkōdō (獨行道, The Path of Aloneness).Both documents were given to Terao Magonojō, the most important of Musashi's students, seven days before Musashi's death. The Book of Five Rings deals primarily with the character of his Niten Ichi-ryū school in a concrete sense, i.e., his own practical martial art and its generic significance; The Path of Aloneness, on the other hand, deals with the ideas that lie behind it, as well as his life's philosophy in a few short aphoristic sentences.
 
-                <p>&copy; Roger Ramos. All rights reserved.</p>
+                The Miyamoto Musashi Budokan training center, located in Ōhara-chō (Mimasaka), Okayama prefecture, Japan was erected to honor his name and legend.
+    
+            </p>
+        </section>
+        <!--this is a section element nested in the main-->        
+        <section>
+            <h2>First duel</h2>
+            In 1596, Musashi was 13, and Arima Kihei, who was traveling to hone his art, posted a public challenge in Hirafuku-mura. Musashi wrote his name on the challenge. A messenger came to Dorin's temple, where Musashi was staying, to inform Musashi that his duel had been accepted by Kihei. Dorin, Musashi's uncle, was shocked by this, and tried to beg off the duel in Musashi's name, based on his nephew's age. Kihei was adamant that the only way his honour could be cleared was if Musashi apologized to him when the duel was scheduled. So when the time set for the duel arrived, Dorin began apologizing for Musashi, who merely charged at Kihei with a six-foot quarterstaff, shouting a challenge to Kihei. Kihei attacked with a wakizashi, but Musashi threw Kihei on the floor, and while Kihei tried to get up, Musashi struck Arima between the eyes and then beat him to death. Arima was said to have been arrogant, overly eager to battle, and not a terribly talented swordsman.
+
+            — William Scott Wilson, The Lone Samurai
+            
+            <h3>Teaching </h3>
+            <p>Musashi created and refined a two-sword kenjutsu technique called niten'ichi (二天一, "two heavens as one") or nitōichi (二刀一, "two swords as one") or 'Niten Ichi-ryū' (A Kongen Buddhist Sutra refers to the two heavens as the two guardians of Buddha). In this technique, the swordsman uses both a large sword, and a "companion sword" at the same time, i.e. a katana with a wakizashi.[28]
+
+                The two-handed movements of temple drummers may have inspired him, although it could be that the technique was forged through Musashi's combat experience. Jutte techniques were taught to him by his father—the jutte was often used in battle paired with a sword; the jutte would parry and neutralize the weapon of the enemy while the sword struck or the practitioner grappled with the enemy. Today Musashi's style of swordsmanship is known as Hyōhō Niten Ichi-ryū.[29]
+                
+                Musashi was also an expert in throwing weapons. He frequently threw his short sword, and Kenji Tokitsu believes that shuriken methods for the wakizashi were the Niten Ichi Ryu's secret techniques.[30]
+                
+                Musashi spent many years studying Buddhism and swordsmanship. He was an accomplished artist, sculptor, and calligrapher. Records also show that he had architectural skills. Also, he seems to have had a rather straightforward approach to combat, with no additional frills or aesthetic considerations. This was probably due to his real-life combat experience; although in his later life, Musashi followed a more artistic approach. He made various Zen brush paintings, calligraphy, and sculpted wood and metal. Even in The Book of Five Rings he emphasizes that samurai should understand other professions as well. Musashi's writings were very ambiguous, and translating them into English makes them even more so; thus many different translations of The Book of Five Rings can be found.</p>
+            
+            <div>
+            <h4>As an artist</h4>
+            <p><em>In his later years,</em> <i>Musashi said in his The Book of Five Rings:</i> <b> "When I apply the principle of strategy to the ways of different arts and crafts, I no longer have need for a teacher in any domain."</b> <strong>He proved this by creating recognized masterpieces of calligraphy and classic ink painting.</strong> </p>
+            <h5>Philosophy</h5>
+                 <!--this is a superscript element-->
+            <p>In Musashi's last book, The Book of Five Rings (五輪書, Go Rin no Sho), Musashi seems to take a very philosophical approach to looking at the "craft of war": "There are five ways in which men pass through life: as gentlemen, warriors, farmers, artisans and merchants."
+
+                    Throughout the book, Musashi implies that the way of the Warrior, as well as the meaning of a "true strategist" is that of somebody who has made mastery of many art forms away from that of the sword, such as tea drinking (sadō), laboring, writing, and painting, as Musashi practiced throughout his life.[32] Musashi was hailed as an extraordinary sumi-e artist in the use of ink monochrome as depicted in two such paintings: "Shrike Perched in a Dead Tree" (Koboku Meigekizu, 枯木鳴鵙図) and "Wild Geese Among Reeds" (Rozanzu, 魯山図). Going back to the Book of Five Rings, Musashi talks deeply about the ways of Buddhism.
+                    
+                    He makes particular note of artisans and foremen. When he wrote the book, the majority of houses in Japan were made of wood. In the use of building a house, foremen have to employ strategy based upon the skill and ability of their workers.
+                    
+                    In comparison to warriors and soldiers, Musashi notes the ways in which the artisans thrive through events; the ruin of houses, the splendor of houses, the style of the house, the tradition and name or origins of a house. These too, are similar to the events which are seen to have warriors and soldiers thrive; the rise and fall of prefectures, countries and other such events are what make uses for warriors, as well as the literal comparisons: "The carpenter uses a master plan of the building, and the way of strategy is similar in that there is a plan of campaign".<sup></sup></p>
+                  <!--this is a subscript element-->
+                
+                <p><abbr title="The Man The Legend">TMTL</abbr></p>
+                <h6>The Man</h6>
+                  <!--This is a blockquote element has a site attribute-->
+                <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Miyamoto_Musashi">
+                    <p>
+                        <b>Miyamoto Musashi</b> &semi; (宮本 武蔵, c. 1584 – 13 June 1645),[1] also known as Shinmen Takezō, Miyamoto Bennosuke or, by his Buddhist name, Niten Dōraku  
+                    </p>
+                </blockquote>
+                  <!--This is a blockquote element has a site attribute-->
+                <blockquote id="quote" cite="https://en.wikipedia.org/wiki/The_Book_of_Five_Rings">
+                      <!--This is a q element-->
+                    <q>
+                        If you hold a sword with both hands, it is difficult to wield it freely to left and right, so my method is to carry the sword in one hand.  
+                    </q><br><br>
+                       <!--This is a cite element-->
+                    <cite>Miyamoto Musashi</cite>
+                </blockquote>
+            
+            </div>
+           
+        </section>
+        <section>
+            <h2>Images</h2>
+                  <!--This is a figure element-->
+            <figure id="absolute-path-image" class="main-section-figure">
+                    <!--absolute path image-->
+                      <!--this the title attribute-->
+                       <!--alternative text attribute-->
+                <img  src="images/Miyamoto_Musashi-Portrait-Edo-period.jpg" alt="Contemporaneous portrait of Miyamoto Musashi from Edo period" title="The Legendary Swordsman of Japan">
+                    <!--This is a figure caption element-->
+                <figcaption>Musashi Miyamoto</figcaption>
+            </figure>
+            <!--relative path image-->
+            <!--this the title attribute-->
+            <!--alternative text attribute-->
+            <figure id="relative-path-image" class="main-section-figure">
+                <img  src="images/Miyamoto-Musashi-Fights-Sasaki-Kojiro-at-Ganryujima-Ukiyo-e.jpg" alt="The Arrogant Swordsman" title="Duel with Sasaki Kojiro">
+                <!--This is a figure caption element-->
+                <figcaption>Legendary Duel</figcaption>
+            </figure>
+
+            <!--This a vector image-->
+            <svg alt="" version="1.1" baseProfile="full" width="400"       height="200" xmlns="https://en.wikipedia.org/wiki/The_Book_of_Five_Rings">
+                <rect width="100%" height="100%" fill="black" />
+                <circle cx="200" cy="100" r="90" fill="#B69763"/>
+                <circle cx="240" cy="100" r="90" fill="black"/>
+            </svg>
+        </section>
+        <section id="video">
+            <h2>Video</h2>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=HUXEqS6GqUU&pp=ygUQbXVzYXNoaSBtaXlhbW90bw%3D%3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <video  controls>
+                <source src="https://www.youtube.com/watch?v=AQ9ajaXKUpc&pp=ygUQbXVzYXNoaSBtaXlhbW90bw%3D%3D" type="video/mp4">
+            </video>
+        </section>
+       
+     
+
+    </main> 
+    <aside>
+        <h3>Links to external sites
+        </h3>
+        <ul>
+            <li><a href="https://www.youtube.com/results?search_query=musashi+miyamoto" target="_blank">YouTube</a></li>
+        </ul>
+        <h3>Link to internal source on page</h3>
+        <a href="#section1"><img src="https://en.wikipedia.org/wiki/Miyamoto_Musashi"</a>
+        <h3>Link to email address</h3>
+        <a href="mailto:rramos3799@conestogac.on.ca">Email:Prog1247 Sec 3</a>
+        <h3>Link with telephone number </h3>
+        <a href="tel:548-333-9848">Call for more information</a>
+        <h3>Link to pdf file</h3>
+        <a href="pdf/Assignment 2 HTML CSS .pdf" target="_blank">Assignment 2</a>
+        <h3>Japan's Greatest Swordsman</h3>
+        <a href="https://www.youtube.com/results?search_query=musashi+miyamoto" title="Link to Youtube" target="_blank"><img src="images/Samurai X.jpg" width="100" height="100"></a>
+
+        <h3>table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>column 1</th>
+                    <th>column 2</th>
+                    <th>column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>row 1 data 1</td>
+                    <td>row 1 data 2</td>
+                    <td>row 1 data 3</td>
+                </tr>
+                <tr>
+                    <td>row 2 data 1</td>
+                    <td>row 2 data 2</td>
+                    <td>row 2 data 3</td>
+                </tr>
+                <tr>
+                    <td>row 3 data 1</td>
+                    <td>row 3 data 2</td>
+                    <td>row 3 data 3</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </aside>
+
+
+
+
+    <!--this is the semantic footer element that defines the body's footer-->
+   
+    <footer>
+        <p>&#169; Roger Ramos 2024</p>
+
+    </footer>
+
 
 </body>
 </html>

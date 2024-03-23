@@ -1,0 +1,319 @@
+/*Roger Ramos 8823799*/
+
+html{
+    /* font shorthand 6 propteries  
+        font-style - normal, italic, oblique
+        font-variant - normal, small-caps
+        font-weight normal - bold,  100 - 900
+        font-size/line-height
+        font-family
+
+        ;Times, "Times New Roman", Georgia, serif
+        "Lucida Console", Courier, monospace;
+
+    font : italic small-caps bold px/1.5 Verdana, Arial, Helvetica, sans-serif ;
+    font-variant : normal;
+    font-style : normal;
+    font-family : monospace;
+
+
+   font : italic small-caps bold 20px/1.5 Verdana, Arial, Helvetica, sans-serif ;
+    font-variant : normal;
+    font-style : normal;
+    font-family : monospace;
+    
+
+     color : brown; /* Set text color to blue */
+    }
+    body{
+    
+        width : 100%; /*sets the width of the body % relative to parent element*/
+        max-width : 1200px;/* sets the width of the body absolute units px*/
+        margin : auto; /*margin set to auto for right and left center elemnts inside their parent*/
+        padding : 0.25rem; /*rem relative to root element font size*/
+    
+      
+    
+    }
+    /*named colour*/
+    /*6-HEX*/
+    p{
+        color : #672b06;
+    }
+    /*3-HEX*/
+    h2{
+        color: rgb(107, 88, 67); /* same as #ffcc99 */
+    }
+    p{
+       
+        color: rgb(91, 16, 53); /* same as #bb5588 */
+    }
+    /*RGB red green blue*/
+    p{
+        color : rgb(131, 84, 131);
+    }
+    /*RGBA alpha*/
+    p{
+        color : rgba(168, 131, 125, 0.5);
+    }
+    /*HSL hue saturation lightness*/
+    p{
+        color : hsl(147, 21%, 49%);
+    }
+    /*HSLA alpha*/
+    p{
+        color : hsla(8, 25%, 56%, 0.6);
+    }
+    
+    /*h1 element selector*/
+    h1{
+        color : rgb(128, 79, 79) !important; /* Set text color to red */
+        text-align: center;/*center-align text*/
+    
+    }
+    /*h1 element selector*/
+    h1{
+        color : rgb(129, 129, 190); /* Set text color to blue */
+    }
+    /*id selector*/
+    #main-heading{
+        color : rgb(42, 2, 42); /* Set text color to purple */
+    }
+    /*class selector*/
+    .headings{
+        color : rgb(33, 33, 32); /* Set text color to orange */
+    }
+    #video{
+        font-size : 10px;/*parent element of the video and iframe*/
+    }
+    iframe, video{
+      
+        width : 50%;/*sets the width of the images and videos % relative to parent element*/
+        height : 50%;/*sets the height of the images and videos % relative to parent element*/
+        height : 10em; /*em relative to parent element font size*/
+    }
+    /*descendant selector*/
+    main p{
+        color : rgb(2, 2, 62);
+    }
+    /*child selector*/
+    section > p{
+        color : rgb(46, 18, 46);
+    }
+    /*General sibling selector*/
+    h2 ~ p{
+        color : rgb(41, 40, 40);
+    }
+    /*Ajecent sibling selector*/
+    h2 + p{
+        color : rgb(37, 1, 1);
+    }
+    /*multiple selector*/
+    h2, h6, #span-h, .red-p, footer p{
+    
+        color : hsl(146.5, 72.2%, 14.1%);
+    
+    }
+    /*id selector - descendant selector*/
+    #section1 p{
+        color : #866c3c;
+    }
+    /*type selector, child selector, class selector*/
+    main > .headings{
+        color :rgb(238, 130, 238);
+    }
+    
+    section {
+        background-color:  hsla(147, 40%, 90%, 0.1); /*sets background color*/
+    }
+    section {
+        background-color: rgba(252, 252, 252, 0.1); /*sets background color*/
+    }
+    section{ 
+        background :hsl(147, 50%, 47%); /*sets background color*/
+    }
+    
+    header{
+        /*sets background color with a linear gradient */
+        background-image: linear-gradient(red 20%, white 10%, blue 80%) !important;
+       /* height : 20vh; 
+        width : 20vw; */
+    
+    
+        /******BOX MODEL*****/
+        /********MARGINS****/
+        margin-top : 1rem;
+        margin-bottom : 1rem;
+        
+        margin-left : .5rem;
+        margin-right : 1.5rem;
+        margin : 1rem 1.5rem 1rem .5rem;
+        margin : 1rem 1.5rem;
+       
+        margin : 1rem 1.5rem .5rem;
+        margin : 1rem;
+     /********PADDING****/
+        padding-top : 1rem;
+        padding-bottom : 1rem;
+        padding-left : .5rem;
+        padding-right : 1.5rem;
+        padding : 1rem 1.5rem 1rem .5rem;
+        padding : 1rem 1.5rem;
+       
+        padding : 1rem 1.5rem .5rem;
+        padding : 1rem;
+        /*****BORDERS******/
+        border-style : dashed;
+        border-bottom-style : solid;/*sets the styleof the border*/
+        border-width : .25rem; /*sets the width of the border*/
+        border-bottom-width: .5rem; /*sets the width of the border-bottom*/
+        border-color :black; /*sets the color of the border*/
+        border-top-color : white; /*sets the color of the border-top*/
+    
+        border : 1rem solid black;
+        border-radius : 1rem;
+       
+    
+    }
+    .main-section-figure{
+       
+       border-radius : 1rem;
+       text-align: center; /*center-align text*/
+      
+    
+    }
+    #relative-path-image{
+        background-color: aliceblue;/*sets background color*/
+        border : .25rem solid green; /*border shorthand property width, style colour  */
+        color :green;
+    }
+    #absolute-path-image{
+        background-color: aqua;/*sets background color*/
+        border : .25rem solid blue; /*border shorthand property width, style colour  */
+        color : blue;
+    }
+    .main-section-figure img{
+        width : 80%;
+        height : 90%;
+        padding : .5rem;
+        border-radius : 1rem; /*rounds the corners of the border*/
+       
+    }
+    main {
+        margin-top : 2rem;
+       
+    }
+    #quote{
+        
+        border : .5rem solid #b58;
+        /*Sets box shawdow*/
+        box-shadow: 10px 10px 8px black;
+        /*Specify a horizontal and a vertical shadow*/
+        box-shadow: 10px 10px;
+        box-shadow: 10px 10px lightblue;/* - colour*/
+        box-shadow: 10px 10px 5px lightblue;/* - blur*/
+        box-shadow: 10px 10px 5px 12px lightblue; /* spread radius of the shadow*/
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    aside a:hover{
+        color : green;
+    }
+    nav{
+        background-color: aqua;
+        padding: 0 1rem 2rem 1rem ;
+        margin : 1rem;
+        text-align: center;
+    }
+    nav ul{ /* applies these styles to all the child <ul> tags in <nav> */
+      
+        padding: 0.25rem ;
+        margin: 0 0.25rem;   
+      
+        
+    }
+    nav ul li{
+        list-style-type: none;
+        border: 0.1rem solid orange;
+        background-color: white;
+        
+    
+    }
+    
+    nav ul li a{
+        color:  orange;
+        font-variant: small-caps;
+        font-size: 1.25rem;
+        background-color: #FFFFFF;
+        display: block;   
+        font-weight: bold;
+        text-decoration: none;   
+    }
+    nav ul li a:hover { /* styles for the <a> in the sub menu on mouse over */
+        color: white;
+        background-color:orange;
+        border: 0.1rem solid white;
+    }
+    #home-link{
+        width : 49.5%;
+        float : left;
+    }
+    #contact-link{
+        width : 49.5%;
+        float : right;
+    }
+    section ol li{
+        list-style-type: lower-alpha;
+        list-style-type: upper-alpha;
+        list-style-type: lower-roman;
+    }
+    section ul li{
+        list-style-type: circle;
+        list-style-type: square;
+    }
+    main{
+        padding : .5rem;
+        margin : .5rem;
+        width : 66%;
+        float : left;
+    }
+    aside{
+        padding : .5rem;
+        margin : .5rem;
+        width : 26%;
+        float : right;
+    }
+    
+    footer{
+        clear : both;
+    }
+    
+    table, th, td{
+        border : 0.1rem solid black;
+    }
+    
+    input, select, textarea{
+        display :block;
+        padding : .25rem;
+        margin : 0.25rem;
+        width : 50%;
+    }
+    input[type=radio]{
+        width : 2.5rem;
+        height : 2.5rem;
+    }
+    input[type=checkbox]{
+        width : 2.5rem;
+        height : 2.5rem;
+    }
+    fieldset{
+        border: none;
+    }
+    label, legend{
+        font-weight: 500;
+        color : blueviolet;
+        font-variant: small-caps;
+        font-size : 1.5rem;
+    }
