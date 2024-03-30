@@ -1,144 +1,330 @@
 /*Roger Ramos 8823799*/
-
-html{
-    /* font shorthand 6 propteries  
-        font-style - normal, italic, oblique
-        font-variant - normal, small-caps
-        font-weight normal - bold,  100 - 900
-        font-size/line-height
-        font-family
-
-        ;Times, "Times New Roman", Georgia, serif
-        "Lucida Console", Courier, monospace;
-
-    font : italic small-caps bold px/1.5 Verdana, Arial, Helvetica, sans-serif ;
-    font-variant : normal;
-    font-style : normal;
-    font-family : monospace;
-
-
- color : rgb(24, 6, 222);
+/* Ruleset for html element */
+html {
+font: normal normal normal normal 20px Verdana, garamond;
+    }
+/* Ruleset for h1 and h2 */    
+h1, h2 {
+        font-variant: small-caps;
+        color: black;
 }
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
+/* Ruleset for figure captions */
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1rem;
+}
+/* Ruleset for quotes */
+q {
+    font-style: bold;
+    font-family: bold;
+    font-size: 1rem;
 }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(175, 174, 174);
-    width : 100%;
+footer p {
+    font-size: 1rem;
+}
+/* Ruleset for footer paragraphs */
+body{
+    width : 90%;
     max-width : 1200px;
-    margin : auto;
-    padding : 0.30rem;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(114, 101, 101);
-    color: rgb(19, 17, 17);
-}
-
-h2 {
-    text-align: center;
-    color: rgb(113, 97, 81);
-    font-size: 20px;
-    box-sizing: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: grey;
-    color: #fff;
-    position: absolute;
-    bottom: 10;
-    width: 100%;
-}
-img, video{
-    text-align: center;
-    width : 40%;
-    height : 50%;
-    border : .5rem solid rgb(194, 98, 146);
-    box-shadow: 10px 10px 8px black;
-    box-shadow: 10px 10px;
-    box-shadow: 10px 10px rgb(75, 109, 121);
-    box-shadow: 10px 10px 5px rgb(59, 78, 84);
-    box-shadow: 10px 10px 5px 12px rgb(52, 66, 70); 
-
-ul {
-    list-style-type: none;
-}
-
- border-image-width: auto;
-    list-style-position: outside; 
-
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#quote{
+    margin : 0 auto;
+    padding : 1rem;
+    background-color: hsla(35, 7%, 33%, 0.6);    
+    }
     
-    border : .5rem solid rgb(135, 66, 100);
-    box-shadow: 10px 10px 8px black;
-    box-shadow: 10px 10px;
-    box-shadow: 10px 10px rgb(45, 62, 68);
-    box-shadow: 10px 10px 5px rgb(59, 78, 84);
-    box-shadow: 10px 10px 5px 12px rgb(58, 68, 71); 
-    
+/* Ruleset for image elements */
+.main-section-figure img {
+    width: 16em;
+    height: 15em;
+    padding: 2rem;
+    border-radius: 8%;
 }
-#relative-path-image{
-    background-color: rgb(56, 102, 142);
-    border : .25rem solid green;
-    color :green;
-}
-#absolute-path-image{
-    background-color: aqua;
-    border : .25rem solid blue; 
-    color : blue;
-}
-.main-section-figure img{
-    width : 60%;
-    height : 80%;
-    padding : .5rem;
-    border-radius : 3rem; 
+/* Ruleset for figure elements */
+.main-section-figure{
 
+    border-radius : 1rem;
+    text-align: center;
+}    
+header, footer {
+    text-align: center;
+    border: 0.5rem solid #690215;
+    background-image: linear-gradient(rgb(106, 69, 4), rgb(203, 4, 10), rgb(64, 61, 57));
+  }
+/* Ruleset for the four sections nested in main */
+.main-section {
+    text-align: center;
+    padding: 1rem;
 }
-#quote{
+p{
+        color : #8a079e;
+}
+/* Ruleset for image container */
+.image-container {
+        border: 0.5rem solid rgb(214, 67, 9);
+        border-radius: 8%;
+        background-color: hsla(44, 99%, 39%, 0.8);
+        float: left;
+        width: calc(10% - 1em);
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+/* Ruleset for image inside container */
+.image-container img {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 4%;
+}
+
+    h2{
+        color: rgb(107, 88, 67);
+    }
+    p{
+        color: rgb(91, 16, 53);
+    }
+   
+    p{
+        color : rgb(124, 13, 124);
+    }
+    p{
+        color : rgba(168, 131, 125, 0.5);
+    }
+    p{
+        color : hsl(147, 21%, 49%);
+    }
+    p{
+        color : hsla(8, 25%, 56%, 0.6);
+    }
+    /*h1 element selector*/
+    h1{
+        color : rgb(77, 35, 35) !important;
+        text-align: center;
+    }
+    h1{
+        color : rgb(129, 129, 190);
+    }
+    #main-heading{
+        color : rgb(42, 2, 42);
+    }
+    .headings{
+        color : rgb(33, 33, 32);
+    }
+    #video{
+        font-size : 10px;
+    }
+    iframe, video{
+      
+        width : 50%;/*sets the width of the images and videos % relative to parent element*/
+        height : 50%;/*sets the height of the images and videos % relative to parent element*/
+        height : 10em; /*em relative to parent element font size*/
+    }
+    /*descendant selector*/
+    main p{
+        color : rgb(2, 2, 62);
+    }
+    /*child selector*/
+    section > p{
+        color : rgb(46, 18, 46);
+    }
+    /*General sibling selector*/
+    h2 ~ p{
+        color : rgb(41, 40, 40);
+    }
+    /*Ajecent sibling selector*/
+    h2 + p{
+        color : rgb(37, 1, 1);
+    }
+    /*multiple selector*/
+    h2, h6, #span-h, .red-p, footer p{
+    
+        color : hsl(146.5, 72.2%, 14.1%);
+    
+    }
+    /*id selector - descendant selector*/
+    #section1 p{
+        color : #866c3c;
+    }
+    /*type selector, child selector, class selector*/
+    main > .headings{
+        color :rgb(238, 130, 238);
+    }
+    
+    section {
+        background-color:  hsla(147, 40%, 90%, 0.1); /*sets background color*/
+    }
+    section {
+        background-color: rgba(252, 252, 252, 0.1); /*sets background color*/
+    }
+    section{ 
+        background :hsl(147, 50%, 47%); /*sets background color*/
+    }
+    
+    header{
+        /*sets background color with a linear gradient */
+        background-image: linear-gradient(red 20%, white 10%, blue 80%) !important;
+       /* height : 20vh; 
+        width : 20vw; */
+    
+    
+        /******BOX MODEL*****/
+        /********MARGINS****/
+        margin-top : 1rem;
+        margin-bottom : 1rem;
         
-        border : .5rem solid #b58;
-        box-shadow: 10px 10px 8px black;
-        box-shadow: 10px 10px;
-        box-shadow: 10px 10px lightblue;
-        box-shadow: 10px 10px 5px lightblue;
-        box-shadow: 10px 10px 5px 12px lightblue;
+        margin-left : .5rem;
+        margin-right : 1.5rem;
+        margin : 1rem 1.5rem 1rem .5rem;
+        margin : 1rem 1.5rem;
+       
+        margin : 1rem 1.5rem .5rem;
+        margin : 1rem;
+     /********PADDING****/
+        padding-top : 1rem;
+        padding-bottom : 1rem;
+        padding-left : .5rem;
+        padding-right : 1.5rem;
+        padding : 1rem 1.5rem 1rem .5rem;
+        padding : 1rem 1.5rem;
+       
+        padding : 1rem 1.5rem .5rem;
+        padding : 1rem;
+        /*****BORDERS******/
+        border-style : dashed;
+        border-bottom-style : solid;/*sets the styleof the border*/
+        border-width : .25rem; /*sets the width of the border*/
+        border-bottom-width: .5rem; /*sets the width of the border-bottom*/
+        border-color :black; /*sets the color of the border*/
+        border-top-color : white; /*sets the color of the border-top*/
+    
+        border : 1rem solid black;
+        border-radius : 1rem;
+    }
+    .main-section-figure{
+       border-radius : 1rem;
+       text-align: center;
+    }
+    #relative-path-image{
+        background-color: rgb(7, 119, 217);/*sets background color*/
+        border : .25rem solid rgb(40, 53, 40); /*border shorthand property width, style colour  */
+        color :rgb(3, 218, 3);
+    }
+    #absolute-path-image{
+        background-color: aqua;/*sets background color*/
+        border : .25rem solid blue; /*border shorthand property width, style colour  */
+        color : blue;
+    }
+    .main-section-figure img{
+        width : 80%;
+        height : 90%;
+        padding : 1rem;
+        border-radius : 1rem; 
+    }
+    main {
+        margin-top : 2rem;
+    }
+    #quote{
+        border : .5rem solid rgb(85, 3, 44);
+        box-shadow: 10px 10px 5px 12px rgb(69, 72, 73);
         
     }
-h3 {
+    a{
+        text-decoration: none;
+    }
+    aside a:hover{
+        color : rgb(16, 94, 16);
+    }
+    nav{
+        background-color: rgb(2, 72, 72);
+        padding: 0 1rem 2rem 1rem ;
+        margin : 1rem;
         text-align: center;
-        color: rgb(113, 97, 81);
-        font-size: 20px;
-        box-sizing: 20px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 6px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    }
+    nav ul{ /* applies these styles to all the child <ul> tags in <nav> */
+        padding: 0.50rem ;
+        margin: 0 0.50rem;   
+    }
+    nav ul li{
+        list-style-type: none;
+        border: 0.1rem solid orange;
+        background-color: white;
+
+    }
+    
+    nav ul li a{
+        color:  rgb(135, 89, 4);
+        font-variant: small-caps;
+        font-size: .80rem;
+        background-color: #FFFFFF;
+        display: block;   
+        font-weight: bold;
+        text-decoration: none;   
+    }
+    nav ul li a:hover { /* styles for the <a> in the sub menu on mouse over */
+        color: white;
+        background-color:rgb(25, 17, 2);
+        border: 0.1rem solid rgba(255, 255, 255, 0.542);
+    }
+    #home-link{
+        width : 50%;
+        float : left;
+    }
+    #contact-link{
+        float : none;
+        width : 20%;
+    }
+    section ol li{
+        list-style-type: lower-alpha;
+        list-style-type: upper-alpha;
+        list-style-type: lower-roman;
+    }
+    section ul li{
+        list-style-type: circle;
+        list-style-type: square;
+    }
+    main{
+        padding : .5rem;
+        margin : .5rem;
+        width : 66%;
+        float : left;
+    }
+    aside{
+        padding : .5rem;
+        margin : .5rem;
+        width : 26%;
+        float : right;
+    }
+    
+    footer{
+        clear : both;
+    }
+    
+    table, th, td{
+        border : 0.1rem solid rgb(28, 27, 27);
+    }
+    
+    input, select, textarea{
+        display :block;
+        padding : .25rem;
+        margin : 0.25rem;
+        width : 50%;
+    }
+    input[type=radio]{
+        width : 2.5rem;
+        height : 2.5rem;
+    }
+    input[type=checkbox]{
+        width : 2.5rem;
+        height : 2.5rem;
+    }
+    fieldset{
+        border: none;
+    }
+    label, legend{
+        font-weight: 500;
+        color : blueviolet;
+        font-variant: small-caps;
+        font-size : 1.5rem;
+    }

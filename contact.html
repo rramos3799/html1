@@ -1,0 +1,145 @@
+<!--Roger Ramos 8823799 -->
+<!--Section 3 Assignment HTML and CSS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Musashi, Miyamoto, Swordsman, Teacher, Philosophy">
+    <meta name="description" content="This website is about the Musashi Miyamoto.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <title>Japan's Legendary Swordsman - Index</title>    
+</head>
+<body >  
+    <header>
+        <h1>Japan's Legendary Swordsman</h1>        
+    </header>
+    <nav id="nav">
+        <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+<main id="main">
+        <!--First Section: Biography-->       
+    <section class="main-section">
+        <div>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" autofocus placeholder="" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <fieldset>
+                    <legend>What is your gender?</legend>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other" >                  
+                </fieldset>
+                <div>            
+                <fieldset>
+                    <legend>What would you like to ask question?</legend>
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" name="game" id="yes" value="yes" required>
+                    <label for="no">No</label>
+                    <input type="checkbox" name="game" id="no" value="no">
+                </fieldset>           
+                </div>
+                <div>
+                <fieldset>
+                    <label for="information">For more information fill up the box below</label>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="website">Website</label>
+                    <input type="url" name="url" id="website">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="dob" name="dob" min="1980-01-01">
+                </fieldset> 
+                </div>
+
+                <div>
+                <fieldset>
+                    <button type="submit">
+                        Submit Form
+                    </button>
+                </fieldset>
+                </div>
+                <div>
+                <fieldset>
+                    <button type="reset">
+                        Reset Form
+                    </button>
+                </fieldset>
+                </div>
+        </section>     
+    </main>
+
+    <aside id="aside">
+        <section>
+            <center><h3>FAQs</h3></center>
+        <table>
+                <tr>
+                    <th>Samurai Warrior</th>
+                    <th>Later Life     </th>
+                    <th>Philisophy     </th>
+                </tr>
+                <tr>
+                    <td> Undefeated record of 61 duels </td>
+                    <td> Painter and Writer      </td>
+                    <td> The Book of Five Rings  </td>
+                </tr>
+        </table>
+        </section>
+        </table>
+    
+    <section>
+        <fieldset>
+        <center><h2>Direct Links</h2></center>
+        <ul>
+        <li><a href="https://www.conestogac.on.ca/" target="_blank">Conestoga College</a></li>
+        <li><a href="https://www.wikipedia.org/" target="_blank">WikiPedia</a></li>
+        </ul>
+    </section></fieldset>
+
+    <section>
+        <fieldset>
+    <h3>Resources</h3>
+        <ul>
+        <li><a href="https://www.conestogac.on.ca/" target="_blank">Conestoga College</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=musashi+miyamoto" target="_blank">YouTube</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Miyamoto_Musashi" target="_blank">WikiPedia</a></li>
+        </ul>
+    </section></fieldset>
+
+    <section>
+        <div>
+            <center><h2>Pictures</h2></center>
+            <figure class="main-section-figure" id="absolute-path-image">
+                <img src="images/Musashi Miyamoto.jpg" alt="from Edo period depiction image">
+                <figcaption> Musashi Miyamoto painting from Edo period </figcaption>
+            </figure>
+            <figure class="main-section-figure" id="relative-path-image">
+                <img src="images/Samurai X.jpg" alt="modern depiction">
+                <figcaption> Anime depiction of Musashi Miyamoto </figcaption>
+            </figure></div>
+    </section>
+
+    </aside>
+
+    <footer id="footer">
+        <p>&#169; Roger Ramos - 2024</p>
+    </footer>
+</body>
+</html>
