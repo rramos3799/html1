@@ -265,7 +265,7 @@ p{
     nav ul li a:hover { /* styles for the <a> in the sub menu on mouse over */
         color: white;
         background-color:rgb(25, 17, 2);
-        border: 0.1rem solid rgba(255, 255, 255, 0.542);
+        border: 0.1rem solid rgba(250, 2, 2, 0.542);
     }
     #home-link{
         width : 50%;
