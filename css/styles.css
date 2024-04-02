@@ -282,7 +282,7 @@ p{
     }
     section ul li{
         list-style-type: circle;
-        list-style-type: square;
+        list-style-type: circle;
     }
     main{
         padding : .5rem;
